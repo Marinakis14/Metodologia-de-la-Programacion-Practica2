@@ -36,7 +36,8 @@ public class EjemploPrograma {
         try {
             // Main logic here
             // 1. Open file (Abrir el archivo)
-            File miArchivo = new File("datos.txt");
+            File miArchivo = new File("ArchivoQueSePuedeAbrir"); // aqui no da erro porque el archivo existe
+            System.out.println("Abriendo archivo...");
 
             // Aquí usamos la firma: public Scanner(File source)
             lector = new Scanner(miArchivo);
@@ -44,19 +45,28 @@ public class EjemploPrograma {
             // 2. Process file (Procesar el archivo)
             System.out.println("Leyendo contenido del archivo...");
 
+            // Hacemos lo mismo pero en este caso con un archivo que no existe
+            miArchivo = new File("test.in");
+            System.out.println("Abriendo siguiente archivo...");
+
+            lector = new Scanner(miArchivo);
+            // Aqui ya da error y no sigue
+            System.out.println("Hemos intentado abrir el archivo pero no hemos podido");
+            System.out.println("Estos mensajes no se van a leer");
+
         } catch (FileNotFoundException ex) {    // Exception handlers below
             // Exception handler for "file not found"
             System.out.println("Error: No hemos encontrado el archivo");
 
         } catch (IOException ex) {
             // Exception handler for "IO errors"
-            System.out.println("Error de lectura/escritura: " + ex.getMessage());
+            System.out.println("Error de lectura/escritura: ");
 
         } finally {
             // always try to close the file
             if (lector != null) { // si es null no se ejecuta nada
                 lector.close();
-                System.out.println("Archivo cerrado correctamente.");
+                System.out.println("Archivos cerrados correctamente.");
             }
 
         }

@@ -1,10 +1,11 @@
-package parte1.ManejoDeExcepcionesYErrores.ej1_Introduccion;
+package parte1.ManejoDeExcepcionesYErrores.ej4.DefinicionClasesDeExcepciones;
 
-import java.util.Scanner;
 import java.io.File;
 import java.io.FileNotFoundException;
-public class ScannerFromFileWithCatch {
-    public static void main(String[] args) {
+import java.util.Scanner;
+
+public class EjemploCheckedExceptions {
+    static void main(String[] args) {
         try {
             Scanner in = new Scanner(new File("ArchivoQueSePuedeAbrir")); // archivo que si existe
             System.out.println("El archivo se ha leido correctamente");
