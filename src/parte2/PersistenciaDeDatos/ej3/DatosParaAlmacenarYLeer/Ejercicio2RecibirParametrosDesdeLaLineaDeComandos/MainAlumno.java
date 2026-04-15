@@ -40,8 +40,10 @@ public class MainAlumno {
     static void main(String[] args) {
 
         if (args.length < 2) {
-            System.out.println("Uso: java -jar NombreDeTuProyecto.jar <operacion> <fichero>");
-            System.out.println("Operaciones permitidas: init o show");
+            System.out.println("Error: Argumentos insuficientes.");
+            System.out.println("Uso correcto:");
+            System.out.println("java -jar Nombre.jar <accion> <ruta_archivo>");
+            System.out.println("Acciones posibles: init, show");
             return;
         }
 

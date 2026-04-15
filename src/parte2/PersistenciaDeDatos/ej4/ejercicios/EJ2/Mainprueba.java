@@ -30,8 +30,9 @@ public class Mainprueba {
             Book libroLeido = gson.fromJson(new FileReader("src/parte2/PersistenciaDeDatos/ej4/Ejercicios/EJ2/book.json"), Book.class);
             //  Mostrar resultado
             if (libroLeido != null) {
-                System.out.println(libroLeido.name);
-                System.out.println(libroLeido.author.name);
+                System.out.println("Nombre libro: " + libroLeido.name);
+                System.out.println("Informacion autor: " + libroLeido.author.name + ", " + libroLeido.author.email + ", " + libroLeido.author.gender + ", ");
+                System.out.println("Nombre libro: " + libroLeido.price);
             }
 
         } catch (JsonIOException e) {
@@ -42,6 +43,14 @@ public class Mainprueba {
     //Se han utilizado dos clases, Book y Author, donde Book contiene un objeto Author.
     //Al convertir el objeto a JSON se genera una estructura anidada.
     //Al leer el fichero, se reconstruyen correctamente ambos objetos.
+
+    //Asi es como queda guardado en el json:
+    //{"name":"Quijote","author":{"name":"Cervantes","email":"mail@gmail.com","gender":"m"},"price":20.0}
+
+    //Y asi es como se ve por pantalla:
+    //Nombre libro: Quijote
+    //Informacion autor: Cervantes, mail@gmail.com, m,
+    //Nombre libro: 20.0
 }
 
 
