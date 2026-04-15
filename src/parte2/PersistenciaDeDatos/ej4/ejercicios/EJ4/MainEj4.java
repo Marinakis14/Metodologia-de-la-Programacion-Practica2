@@ -1,8 +1,9 @@
-package parte2.PersistenciaDeDatos.ej4.ejercicios.EJ4;
+package parte2.PersistenciaDeDatos.ej4.Ejercicios.EJ4;
 
 import com.google.gson.Gson;
 import java.io.FileWriter;
 import java.io.FileReader;
+import java.io.IOException;
 
 public class MainEj4 {
     public static void main(String[] args) throws Exception {
@@ -17,12 +18,14 @@ public class MainEj4 {
 
         Asignatura asignatura = new Asignatura("Programacion", lista);
 
-        try (FileWriter writer = new FileWriter("asignatura.json")) {
+        try (FileWriter writer = new FileWriter("src/parte2/PersistenciaDeDatos/ej4/Ejercicios/EJ4/asignatura.json")) {
             gson.toJson(asignatura, writer);
+        } catch (IOException e) {
+            System.out.println("Error al guardar el archivo");
         }
 
         Asignatura asignaturaLeida;
-        try (FileReader reader = new FileReader("asignatura.json")) {
+        try (FileReader reader = new FileReader("src/parte2/PersistenciaDeDatos/ej4/Ejercicios/EJ4/asignatura.json")) {
             asignaturaLeida = gson.fromJson(reader, Asignatura.class);
         }
 

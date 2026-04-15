@@ -1,4 +1,4 @@
-package parte2.PersistenciaDeDatos.ej4.ejercicios.EJ2;
+package parte2.PersistenciaDeDatos.ej4.Ejercicios.EJ2;
 
 public class Book {
     String name;

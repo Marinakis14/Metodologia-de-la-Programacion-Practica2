@@ -1,8 +1,9 @@
-package parte2.PersistenciaDeDatos.ej4.ejercicios.EJ1.cuaderno4;
+package parte2.PersistenciaDeDatos.ej4.Ejercicios.EJ1.cuaderno4;
 
 import com.google.gson.Gson;
 import java.io.FileWriter;
 import java.io.FileReader;
+import java.io.IOException;
 
 public class Main4 {
     public static void main(String[] args) throws Exception {
@@ -13,22 +14,26 @@ public class Main4 {
         ResizableCircle rc = new ResizableCircle(10.0);
 
         // Guardar
-        try (FileWriter writer = new FileWriter("circle2.json")) {
+        try (FileWriter writer = new FileWriter("src/parte2/PersistenciaDeDatos/ej4/Ejercicios/EJ1/cuaderno4/circle2.json")) {
             gson.toJson(c, writer);
+        } catch (IOException e) {
+            System.out.println("Error al guardar el archivo");
         }
 
-        try (FileWriter writer = new FileWriter("resizable.json")) {
+        try (FileWriter writer = new FileWriter("src/parte2/PersistenciaDeDatos/ej4/Ejercicios/EJ1/cuaderno4/resizable.json")) {
             gson.toJson(rc, writer);
+        } catch (IOException e) {
+            System.out.println("Error al guardar el archivo");
         }
 
         // Leer
         Circle cLeido = gson.fromJson(
-                new FileReader("circle2.json"),
+                new FileReader("src/parte2/PersistenciaDeDatos/ej4/Ejercicios/EJ1/cuaderno4/circle2.json"),
                 Circle.class
         );
 
         ResizableCircle rcLeido = gson.fromJson(
-                new FileReader("resizable.json"),
+                new FileReader("src/parte2/PersistenciaDeDatos/ej4/Ejercicios/EJ1/cuaderno4/resizable.json"),
                 ResizableCircle.class
         );
 

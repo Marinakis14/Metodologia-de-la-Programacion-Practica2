@@ -1,8 +1,9 @@
-package parte2.PersistenciaDeDatos.ej4.ejercicios.EJ3;
+package parte2.PersistenciaDeDatos.ej4.Ejercicios.EJ3;
 
 import com.google.gson.Gson;
 import java.io.FileWriter;
 import java.io.FileReader;
+import java.io.IOException;
 
 public class MainEj3 {
     public static void main(String[] args) throws Exception {
@@ -12,12 +13,14 @@ public class MainEj3 {
         // PRUEBA 1: array solo
         int[] numbers = {1, 2, 3, 4, 5};
 
-        try (FileWriter writer = new FileWriter("numbers.json")) {
+        try (FileWriter writer = new FileWriter("src/parte2/PersistenciaDeDatos/ej4/Ejercicios/EJ3/numbers.json")) {
             gson.toJson(numbers, writer);
+        } catch (IOException e) {
+            System.out.println("Error al guardar el archivo");
         }
 
         int[] numbersRead;
-        try (FileReader reader = new FileReader("numbers.json")) {
+        try (FileReader reader = new FileReader("src/parte2/PersistenciaDeDatos/ej4/Ejercicios/EJ3/numbers.json")) {
             numbersRead = gson.fromJson(reader, int[].class);
         }
 
@@ -37,12 +40,14 @@ public class MainEj3 {
 
         Classroom clase = new Classroom("1 Bach A", lista);
 
-        try (FileWriter writer = new FileWriter("classroom.json")) {
+        try (FileWriter writer = new FileWriter("src/parte2/PersistenciaDeDatos/ej4/Ejercicios/EJ3/classroom.json")) {
             gson.toJson(clase, writer);
+        } catch (IOException e) {
+            System.out.println("Error al guardar el archivo");
         }
 
         Classroom claseLeida;
-        try (FileReader reader = new FileReader("classroom.json")) {
+        try (FileReader reader = new FileReader("src/parte2/PersistenciaDeDatos/ej4/Ejercicios/EJ3/classroom.json")) {
             claseLeida = gson.fromJson(reader, Classroom.class);
         }
 

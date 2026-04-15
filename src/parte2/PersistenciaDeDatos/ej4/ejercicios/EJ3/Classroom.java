@@ -1,4 +1,4 @@
-package parte2.PersistenciaDeDatos.ej4.ejercicios.EJ3;
+package parte2.PersistenciaDeDatos.ej4.Ejercicios.EJ3;
 
 public class Classroom {
     String className;
