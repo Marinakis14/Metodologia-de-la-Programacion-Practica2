@@ -1,7 +1,8 @@
-package parte2.PersistenciaDeDatos.ej3.DatosParaAlmacenarYLeer;
+package parte2.PersistenciaDeDatos.ej3.DatosParaAlmacenarYLeer.Ejercicio1Usuario;
 
 
 import com.google.gson.Gson;
+
 import java.io.FileReader;
 import java.io.IOException;
 
