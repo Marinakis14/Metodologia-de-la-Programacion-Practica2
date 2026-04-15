@@ -1,6 +1,6 @@
-package parte1.ManejoDeExcepcionesYErrores.ej2_ExplorandoPilaDeLlamadas;
+package parte1.ManejoDeExcepcionesYErrores.ej2.ExplorandoPilaDeLlamadas;
 
-public class MethodCallStackDemo {
+public class MismaClaseConError {
     public static void main(String[] args) {
         System.out.println("Enter main()");
         methodA();
@@ -21,6 +21,7 @@ public class MethodCallStackDemo {
 
     public static void methodC() {
         System.out.println("Enter methodC()");
+        System.out.println(1 / 0);  // divide-by-0 triggers an ArithmeticException
         System.out.println("Exit methodC()");
     }
 }
