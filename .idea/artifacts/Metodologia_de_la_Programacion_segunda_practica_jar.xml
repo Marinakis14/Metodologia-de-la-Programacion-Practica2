@@ -1,0 +1,9 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="Metodologia de la Programacion segunda practica:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/Metodologia_de_la_Programacion_segunda_practica_jar</output-path>
+    <root id="archive" name="Metodologia de la Programacion segunda practica.jar">
+      <element id="module-output" name="Metodologia de la Programacion segunda practica" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/lib/gson-2.10.1.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>
