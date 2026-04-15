@@ -1,3 +1,4 @@
 La serialización de Java nativa guarda los objetos en formato binario y requiere implementar Serializable,
 mientras que con Gson usamos JSON, que es texto legible y más fácil de modificar.
-Además, JSON es más sencillo y flexible, mientras que la serialización de Java es más automática pero menos comprensible y menos portable
+Además, JSON es más sencillo y flexible, mientras que la serialización de Java es más automática pero menos
+comprensible y menos portable

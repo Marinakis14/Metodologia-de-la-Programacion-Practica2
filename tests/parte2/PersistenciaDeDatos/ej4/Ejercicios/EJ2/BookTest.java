@@ -1,10 +1,10 @@
-package parte2.PersistenciaDeDatos.Ejerciciosfinales.EJ1;
+package parte2.PersistenciaDeDatos.ej4.Ejercicios.EJ2;
 
 import org.junit.jupiter.api.Test;
-import static org.junit.jupiter.api.Assertions.assertEquals;
+import parte2.PersistenciaDeDatos.ej4.Ejercicios.EJ1.cuaderno2.Author;
+import parte2.PersistenciaDeDatos.ej4.Ejercicios.EJ1.cuaderno2.Book;
 
-import parte2.PersistenciaDeDatos.ej4.ejercicios.EJ1.cuaderno2.Author;
-import parte2.PersistenciaDeDatos.ej4.ejercicios.EJ1.cuaderno2.Book;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 class BookTest {
 

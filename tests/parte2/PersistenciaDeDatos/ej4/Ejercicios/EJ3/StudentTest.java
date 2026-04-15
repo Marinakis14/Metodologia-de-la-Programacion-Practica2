@@ -1,9 +1,9 @@
-package parte2.PersistenciaDeDatos.Ejerciciosfinales.EJ3;
+package parte2.PersistenciaDeDatos.ej4.Ejercicios.EJ3;
 
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
-import parte2.PersistenciaDeDatos.ej4.ejercicios.EJ3.Student;
+import parte2.PersistenciaDeDatos.ej4.Ejercicios.EJ3.Student;
 
 class StudentTest {
 
@@ -11,15 +11,15 @@ class StudentTest {
     void defaultConstructor() {
         Student s = new Student();
 
-        assertNull(s.name);
-        assertEquals(0, s.age);
+        assertNull(s.getName());
+        assertEquals(0, s.getAge());
     }
 
     @Test
     void constructorWithParams() {
         Student s = new Student("Marcos", 18);
 
-        assertEquals("Marcos", s.name);
-        assertEquals(18, s.age);
+        assertEquals("Marcos", s.getName());
+        assertEquals(18, s.getAge());
     }
 }

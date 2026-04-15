@@ -33,13 +33,11 @@ public class MainEj4 {
         System.out.println(asignaturaLeida.nombreAsignatura);
 
         for (Estudiante e : asignaturaLeida.estudiantes) {
-            System.out.println(e.nombre + " - " + e.edad);
+            System.out.println(e.getNombre() + " - " + e.getEdad());
         }
     }
 }
 
 //El fichero resultante tiene un objeto principal de tipo Asignatura y dentro un array de objetos Estudiante.
 //Sí, se pueden modificar los alumnos en el JSON y, al cargarlo otra vez, se obtienen nuevos objetos con los datos cambiados.
-//Es decir java es capaz de guardar los datos en json en formato de array y de array dentro de un objeto:
-//[1,2,3,4,5]
-//{"className":"1 Bach A","students":[{"name":"Ana","age":18},{"name":"Luis","age":17},{"name":"Marcos","age":17}]}
+//{"nombreAsignatura":"Programacion","estudiantes":[{"nombre":"Ventura","edad":18},{"nombre":"Marino","edad":17},{"nombre":"Marcos","edad":17}]}

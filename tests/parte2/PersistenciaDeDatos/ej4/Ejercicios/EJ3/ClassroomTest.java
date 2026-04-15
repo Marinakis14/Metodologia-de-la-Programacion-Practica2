@@ -1,10 +1,10 @@
-package parte2.PersistenciaDeDatos.Ejerciciosfinales.EJ3;
+package parte2.PersistenciaDeDatos.ej4.Ejercicios.EJ3;
 
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
-import parte2.PersistenciaDeDatos.ej4.ejercicios.EJ3.Student;
-import parte2.PersistenciaDeDatos.ej4.ejercicios.EJ3.Classroom;
+import parte2.PersistenciaDeDatos.ej4.Ejercicios.EJ3.Student;
+import parte2.PersistenciaDeDatos.ej4.Ejercicios.EJ3.Classroom;
 
 class ClassroomTest {
 

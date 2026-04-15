@@ -55,11 +55,13 @@ public class MainEj3 {
         System.out.println(claseLeida.className);
 
         for (Student s : claseLeida.students) {
-            System.out.println(s.name + " - " + s.age);
+            System.out.println(s.getName() + " - " + s.getAge());
         }
     }
 }
 
 //Cuando se guarda un array directamente, el JSON resultante es una lista de valores.
 //Si el array está dentro de un objeto, aparece como un atributo del objeto y se reconstruye correctamente al leerlo.
-//Es decir
+//Es decir java es capaz de guardar los datos en json en formato de array y de array dentro de un objeto:
+//[1,2,3,4,5]
+//{"className":"1 Bach A","students":[{"name":"Ana","age":18},{"name":"Luis","age":17},{"name":"Marcos","age":17}]}

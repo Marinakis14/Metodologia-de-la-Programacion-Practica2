@@ -1,9 +1,9 @@
-package parte2.PersistenciaDeDatos.Ejerciciosfinales.EJ2;
+package parte2.PersistenciaDeDatos.ej4.Ejercicios.EJ1;
 
 import org.junit.jupiter.api.Test;
-import parte2.PersistenciaDeDatos.ej4.ejercicios.EJ1.cuaderno2.Author;
-
 import static org.junit.jupiter.api.Assertions.assertEquals;
+
+import parte2.PersistenciaDeDatos.ej4.Ejercicios.EJ1.cuaderno2.Author;
 
 class AuthorTest {
 

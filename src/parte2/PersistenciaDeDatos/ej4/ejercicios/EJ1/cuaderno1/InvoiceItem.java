@@ -1,4 +1,4 @@
-package parte2.PersistenciaDeDatos.ej4.ejercicios.EJ1.cuaderno1;
+package parte2.PersistenciaDeDatos.ej4.Ejercicios.EJ1.cuaderno1;
 
 public class InvoiceItem {
     //private instance variable

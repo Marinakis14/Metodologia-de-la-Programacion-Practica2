@@ -1,4 +1,4 @@
-package parte2.PersistenciaDeDatos.ej4.ejercicios.EJ1.cuaderno4;
+package parte2.PersistenciaDeDatos.ej4.Ejercicios.EJ1.cuaderno4;
 
 public interface GeometricObject {
     // Method to get the perimeter of the geometric object
