@@ -22,9 +22,9 @@ public class MainLeerSolo {
             Usuario usuarioCargado = cargarObjetoDesdeArchivo(rutaArchivo, Usuario.class);
 
             if (usuarioCargado != null) {
-                System.out.println("Nombre: " + usuarioCargado.nombre);
-                System.out.println("Edad: " + usuarioCargado.edad);
-                System.out.println("Correo: " + usuarioCargado.correo);
+                System.out.println("Nombre: " + usuarioCargado.getNombre());
+                System.out.println("Edad: " + usuarioCargado.getEdad());
+                System.out.println("Correo: " + usuarioCargado.getCorreo());
             } else {
                 System.out.println("No se pudo cargar el archivo.");
             }

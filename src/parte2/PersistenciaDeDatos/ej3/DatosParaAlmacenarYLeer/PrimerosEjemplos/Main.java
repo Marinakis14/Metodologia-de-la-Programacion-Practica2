@@ -1,4 +1,4 @@
-package parte2.PersistenciaDeDatos.ej3.DatosParaAlmacenarYLeer;
+package parte2.PersistenciaDeDatos.ej3.DatosParaAlmacenarYLeer.PrimerosEjemplos;
 
 import com.google.gson.Gson;
 import parte2.PersistenciaDeDatos.ej3.DatosParaAlmacenarYLeer.EjemploCompactoDeAlmacenamientoYCarga.GsonUtilEjemplo;
