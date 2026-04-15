@@ -1,0 +1,17 @@
+1. ¿Que resultado se obtiene al ejecutar: java -jar TuFichero.jar Hola Mundo Cruel?
+
+Al ejecutar este comando en la terminal de InteliJ obtenemos el siguiente resultado:
+Argumento 0: Hola
+Argumento 1: Mundo
+Argumento 2: Cruel
+
+2. ¿Que resultado se obtiene al ejecutar: java -jar TuFichero.jar "Hola Mundo Cruel"?
+
+En este caso el resultado es distinto debido al tipo de parametro que le hemos pasado a nuestro programa:
+Argumento 0: Hola Mundo Cruel
+
+3. ¿Porque existe esa diferencia?
+
+Esta diferencia se da por el tipo de parametro que hemos introducido, en primer lugar hemos introducido Hola Mundo Cruel
+que InteliJ reconoce como tres argumentos distintos, sin embargo al escribir "Hola Mundo Cruel" lo convertimos en una
+cadena de texto la cual es un unico argumento.
