@@ -1,4 +1,4 @@
-package parte1.ManejoDeExcepcionesYErrores.EJ1.cuaderno2;
+package parte2.PersistenciaDeDatos.ej4.ejercicios.EJ1.cuaderno2;
 
 public class Book {
 

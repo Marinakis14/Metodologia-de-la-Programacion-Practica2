@@ -3,7 +3,7 @@ package parte2.PersistenciaDeDatos.Ejerciciosfinales.EJ1;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
-import parte1.ManejoDeExcepcionesYErrores.EJ1.cuaderno3.MovablePoint;
+import parte2.PersistenciaDeDatos.ej4.ejercicios.EJ1.cuaderno3.MovablePoint;
 
 class MovablePointTest {
 
