@@ -11,11 +11,16 @@ public class Main3 {
 
         MovablePoint p = new MovablePoint(1.0f, 2.0f, 0.5f, 1.5f);
 
-        // Guardar
-        gson.toJson(p, new FileWriter("movable.json"));
+        //  Guardar
+        try (FileWriter writer = new FileWriter("movable.json")) {
+            gson.toJson(p, writer);
+        }
 
-        // Leer
-        MovablePoint pLeido = gson.fromJson(new FileReader("movable.json"), MovablePoint.class);
+        //  Leer
+        MovablePoint pLeido = gson.fromJson(
+                new FileReader("movable.json"),
+                MovablePoint.class
+        );
 
         // Mostrar
         System.out.println(pLeido);
