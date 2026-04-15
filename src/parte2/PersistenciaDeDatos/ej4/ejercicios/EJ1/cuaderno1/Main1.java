@@ -13,9 +13,14 @@ public class Main1 {
         Circle c = new Circle(5.0, "blue");
         InvoiceItem item = new InvoiceItem("A1", "Teclado", 2, 20.0);
 
-        // Guardar
-        gson.toJson(c, new FileWriter("circle.json"));
-        gson.toJson(item, new FileWriter("invoice.json"));
+        //  Guardar
+        try (FileWriter writer = new FileWriter("circle.json")) {
+            gson.toJson(c, writer);
+        }
+
+        try (FileWriter writer = new FileWriter("invoice.json")) {
+            gson.toJson(item, writer);
+        }
 
         //  Leer
         Circle cLeido = gson.fromJson(new FileReader("circle.json"), Circle.class);

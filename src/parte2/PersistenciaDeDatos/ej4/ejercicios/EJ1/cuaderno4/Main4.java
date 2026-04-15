@@ -13,12 +13,24 @@ public class Main4 {
         ResizableCircle rc = new ResizableCircle(10.0);
 
         // Guardar
-        gson.toJson(c, new FileWriter("circle2.json"));
-        gson.toJson(rc, new FileWriter("resizable.json"));
+        try (FileWriter writer = new FileWriter("circle2.json")) {
+            gson.toJson(c, writer);
+        }
+
+        try (FileWriter writer = new FileWriter("resizable.json")) {
+            gson.toJson(rc, writer);
+        }
 
         // Leer
-        Circle cLeido = gson.fromJson(new FileReader("circle2.json"), Circle.class);
-        ResizableCircle rcLeido = gson.fromJson(new FileReader("resizable.json"), ResizableCircle.class);
+        Circle cLeido = gson.fromJson(
+                new FileReader("circle2.json"),
+                Circle.class
+        );
+
+        ResizableCircle rcLeido = gson.fromJson(
+                new FileReader("resizable.json"),
+                ResizableCircle.class
+        );
 
         // Mostrar
         System.out.println(cLeido);
