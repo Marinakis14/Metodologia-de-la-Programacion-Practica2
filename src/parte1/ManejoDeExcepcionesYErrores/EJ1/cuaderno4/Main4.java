@@ -1,4 +1,4 @@
-package parte2.PersistenciaDeDatos.ej4.Ejercicios.EJ1.cuaderno4;
+package parte1.ManejoDeExcepcionesYErrores.EJ1.cuaderno4;
 
 import com.google.gson.Gson;
 import java.io.FileWriter;

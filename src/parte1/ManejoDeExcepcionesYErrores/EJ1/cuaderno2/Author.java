@@ -1,4 +1,4 @@
-package parte2.PersistenciaDeDatos.ej4.Ejercicios.EJ1.cuaderno2;
+package parte1.ManejoDeExcepcionesYErrores.EJ1.cuaderno2;
 
 public class Author {
     //private instance variables
@@ -8,7 +8,7 @@ public class Author {
 
     //Constructors
     /** Constructs an Author instance with the given name, email and gender */
-    Author(String name, String email, char gender) {
+    public Author(String name, String email, char gender) {
         this.name = name;
         this.email = email;
         this.gender = gender;
