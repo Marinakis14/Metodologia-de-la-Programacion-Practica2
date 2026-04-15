@@ -1,4 +1,4 @@
-package parte1.ManejoDeExcepcionesYErrores.ej1.Introduccion;
+package parte1.ManejoDeExcepcionesYErrores.Introduccion;
 
 import java.util.Scanner;
 import java.io.File;

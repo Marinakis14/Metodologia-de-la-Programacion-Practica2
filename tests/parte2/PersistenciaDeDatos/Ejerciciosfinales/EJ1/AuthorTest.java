@@ -3,7 +3,7 @@ package parte2.PersistenciaDeDatos.Ejerciciosfinales.EJ1;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-import parte1.ManejoDeExcepcionesYErrores.EJ1.cuaderno2.Author;
+import parte2.PersistenciaDeDatos.ej4.ejercicios.EJ1.cuaderno2.Author;
 
 class AuthorTest {
 

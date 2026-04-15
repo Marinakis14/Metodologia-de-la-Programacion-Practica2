@@ -1,10 +1,8 @@
-package parte1.ManejoDeExcepcionesYErrores.EJ1.cuaderno2;
+package parte2.PersistenciaDeDatos.ej4.ejercicios.EJ1.cuaderno2;
 
 import com.google.gson.Gson;
 import com.google.gson.JsonIOException;
-import com.google.gson.JsonSyntaxException;
 
-import java.io.FileNotFoundException;
 import java.io.FileWriter;
 import java.io.FileReader;
 import java.io.IOException;

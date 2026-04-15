@@ -1,4 +1,4 @@
-package parte1.ManejoDeExcepcionesYErrores.ej1.Introduccion;
+package parte1.ManejoDeExcepcionesYErrores.Introduccion;
 
 public class Main1 {
     public static void main(String[] args) {

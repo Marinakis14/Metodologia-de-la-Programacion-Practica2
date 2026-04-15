@@ -1,6 +1,6 @@
 package parte1.ManejoDeExcepcionesYErrores;
 
-import parte1.ManejoDeExcepcionesYErrores.ej1.Introduccion.Main1;
+import parte1.ManejoDeExcepcionesYErrores.Introduccion.Main1;
 import parte1.ManejoDeExcepcionesYErrores.ej2.ExplorandoPilaDeLlamadas.Main2;
 import parte1.ManejoDeExcepcionesYErrores.ej3.ExcepcionesYPilasDeLLamadas.ProcesoIlustradoEnLaPractica;
 import parte1.ManejoDeExcepcionesYErrores.ej4.DefinicionClasesDeExcepciones.Main4;
