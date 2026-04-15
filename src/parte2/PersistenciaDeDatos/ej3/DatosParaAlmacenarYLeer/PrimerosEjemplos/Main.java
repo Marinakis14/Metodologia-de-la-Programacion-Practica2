@@ -1,6 +1,7 @@
 package parte2.PersistenciaDeDatos.ej3.DatosParaAlmacenarYLeer;
 
 import com.google.gson.Gson;
+import parte2.PersistenciaDeDatos.ej3.DatosParaAlmacenarYLeer.EjemploCompactoDeAlmacenamientoYCarga.GsonUtilEjemplo;
 
 public class Main {
     public static void main(String[] args) {
@@ -9,7 +10,7 @@ public class Main {
         String json = gson.toJson(p);
         // Ahora podemos guardar y cargar nuestro objeto 'p' en el archivo json que hemos creado
         // podemos usar los metodos de GsonUtilEjemplo:
-        GsonUtilEjemplo.guardarObjetoEnArchivo("Fichero.json", json);
+        GsonUtilEjemplo.guardarObjetoEnArchivo("src/parte2/PersistenciaDeDatos/ej3/DatosParaAlmacenarYLeer/PrimerosEjemplos/Fichero.json", json);
         System.out.println(json);
     }
 }

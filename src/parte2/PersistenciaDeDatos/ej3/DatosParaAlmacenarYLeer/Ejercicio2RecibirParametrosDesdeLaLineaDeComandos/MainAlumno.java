@@ -1,4 +1,4 @@
-package parte2.PersistenciaDeDatos.ej3.DatosParaAlmacenarYLeer.ejercicioalumnos;
+package parte2.PersistenciaDeDatos.ej3.DatosParaAlmacenarYLeer.Ejercicio2RecibirParametrosDesdeLaLineaDeComandos;
 
 
 import com.google.gson.Gson;
@@ -37,7 +37,7 @@ public class MainAlumno {
         System.out.println("Nota media: " + alumno.getNotaMedia());
     }
 
-    public static void main(String[] args) {
+    static void main(String[] args) {
 
         if (args.length < 2) {
             System.out.println("Uso: java -jar NombreDeTuProyecto.jar <operacion> <fichero>");
@@ -46,15 +46,15 @@ public class MainAlumno {
         }
 
         String operacion = args[0];
-        String rutaArchivo = args[1];
+        String fichero = args[1];
 
         if (operacion.equals("init")) {
             Alumno alumno = new Alumno("Lucia Perez", 20, "Ingenieria Informatica", 8.5);
-            guardarObjetoEnArchivo(rutaArchivo, alumno);
-            System.out.println("Fichero creado correctamente en: " + rutaArchivo);
+            guardarObjetoEnArchivo(fichero, alumno);
+            System.out.println("Fichero creado correctamente en: " + fichero);
 
         } else if (operacion.equals("show")) {
-            Alumno alumnoCargado = cargarObjetoDesdeArchivo(rutaArchivo, Alumno.class);
+            Alumno alumnoCargado = cargarObjetoDesdeArchivo(fichero, Alumno.class);
 
             if (alumnoCargado != null) {
                 mostrarAlumno(alumnoCargado);

@@ -1,4 +1,4 @@
-package parte2.PersistenciaDeDatos.ej3.DatosParaAlmacenarYLeer.Ejercicio1Usuario;
+package parte2.PersistenciaDeDatos.ej3.DatosParaAlmacenarYLeer.Ejercicio1SoloLectura;
 
 public class Usuario {
     String nombre;

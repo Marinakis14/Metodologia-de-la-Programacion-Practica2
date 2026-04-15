@@ -1,12 +1,12 @@
-package parte2.PersistenciaDeDatos.ej3.DatosParaAlmacenarYLeer;
+package parte2.PersistenciaDeDatos.ej3.DatosParaAlmacenarYLeer.EjemploCompactoDeAlmacenamientoYCarga;
 
 import com.google.gson.Gson;
 import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
-import java.lang.reflect.Type;
+
 public class GsonUtilEjemplo {
-    // Método para guardar un objeto en un archivo JSON
+    // Metodo para guardar un objeto en un archivo JSON
     public static <T> void guardarObjetoEnArchivo(String rutaArchivo, T objeto) {
         Gson gson = new Gson();
         try (FileWriter writer = new FileWriter(rutaArchivo)) {
@@ -16,7 +16,7 @@ public class GsonUtilEjemplo {
             e.printStackTrace();
         }
     }
-    // Método para cargar un objeto desde un archivo JSON
+    // Metodo para cargar un objeto desde un archivo JSON
     public static <T> T cargarObjetoDesdeArchivo(String rutaArchivo, Class<T> clase) {
         Gson gson = new Gson();
         try (FileReader reader = new FileReader(rutaArchivo)) {
@@ -31,7 +31,7 @@ public class GsonUtilEjemplo {
         // Crear una instancia del objeto Usuario
         Usuario usuario = new Usuario("Juan", 30, "juan@example.com");
         // Ruta del archivo donde se guardará el objeto
-        String rutaArchivo = "Usuario1.json";
+        String rutaArchivo = "src/parte2/PersistenciaDeDatos/ej3/DatosParaAlmacenarYLeer/EjemploCompactoDeAlmacenamientoYCarga/Usuario1.json";
         // Guardar el objeto Usuario en un archivo JSON
         guardarObjetoEnArchivo(rutaArchivo, usuario);
         // Cargar el objeto Usuario desde el archivo JSON

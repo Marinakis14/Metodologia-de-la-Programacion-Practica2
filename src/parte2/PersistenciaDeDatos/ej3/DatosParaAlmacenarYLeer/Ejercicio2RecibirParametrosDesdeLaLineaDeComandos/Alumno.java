@@ -1,4 +1,4 @@
-package parte2.PersistenciaDeDatos.ej3.DatosParaAlmacenarYLeer.ejercicioalumnos;
+package parte2.PersistenciaDeDatos.ej3.DatosParaAlmacenarYLeer.Ejercicio2RecibirParametrosDesdeLaLineaDeComandos;
 
 public class Alumno {
     private String nombre;
@@ -17,32 +17,17 @@ public class Alumno {
         return nombre;
     }
 
-    public void setNombre(String nombre) {
-        this.nombre = nombre;
-    }
-
     public int getEdad() {
         return edad;
-    }
-
-    public void setEdad(int edad) {
-        this.edad = edad;
     }
 
     public String getCurso() {
         return curso;
     }
 
-    public void setCurso(String curso) {
-        this.curso = curso;
-    }
-
     public double getNotaMedia() {
         return notaMedia;
     }
 
-    public void setNotaMedia(double notaMedia) {
-        this.notaMedia = notaMedia;
-    }
 }
 

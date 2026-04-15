@@ -1,4 +1,4 @@
-package parte2.PersistenciaDeDatos.ej3.DatosParaAlmacenarYLeer.Ejercicio1Usuario;
+package parte2.PersistenciaDeDatos.ej3.DatosParaAlmacenarYLeer.Ejercicio1SoloLectura;
 
 
 import com.google.gson.Gson;
@@ -18,7 +18,7 @@ public class MainLeerSolo {
         }
 
         public static void main(String[] args) {
-            String rutaArchivo = "Usuario2.json";
+            String rutaArchivo = "src/parte2/PersistenciaDeDatos/ej3/DatosParaAlmacenarYLeer/Ejercicio1SoloLectura/Usuario2.json";
             Usuario usuarioCargado = cargarObjetoDesdeArchivo(rutaArchivo, Usuario.class);
 
             if (usuarioCargado != null) {

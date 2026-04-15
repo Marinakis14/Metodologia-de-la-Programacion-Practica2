@@ -1,4 +1,4 @@
-package parte2.PersistenciaDeDatos.ej3.DatosParaAlmacenarYLeer;
+package parte2.PersistenciaDeDatos.ej3.DatosParaAlmacenarYLeer.PrimerosEjemplos;
 
 public class Persona {
     private String nombre = "John Doe";
