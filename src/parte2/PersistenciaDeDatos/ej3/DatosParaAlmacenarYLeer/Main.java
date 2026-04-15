@@ -7,6 +7,9 @@ public class Main {
         Gson gson = new Gson();
         Persona p = new Persona("Antonio Moratilla", 97);
         String json = gson.toJson(p);
+        // Ahora podemos guardar y cargar nuestro objeto 'p' en el archivo json que hemos creado
+        // podemos usar los metodos de GsonUtilEjemplo:
+        GsonUtilEjemplo.guardarObjetoEnArchivo("Fichero.json", json);
         System.out.println(json);
     }
 }
