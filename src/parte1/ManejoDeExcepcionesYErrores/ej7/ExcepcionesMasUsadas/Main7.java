@@ -1,7 +1,7 @@
 package parte1.ManejoDeExcepcionesYErrores.ej7.ExcepcionesMasUsadas;
 
-public class Main {
-    static void main(String[] args) {
+public class Main7 {
+    public static void main(String[] args) {
         System.out.println("--Vamos a ver las excepciones mas usadas--");
         System.out.println("1. ArrayIndexOutOfBoundsException");
         PruebaArrayIndexOutOfBoundsException.main(new String[0]);

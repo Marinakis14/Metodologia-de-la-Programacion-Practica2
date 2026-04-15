@@ -1,6 +1,6 @@
-package parte1.ManejoDeExcepcionesYErrores.ej2_ExplorandoPilaDeLlamadas;
+package parte1.ManejoDeExcepcionesYErrores.ej2.ExplorandoPilaDeLlamadas;
 
-public class Main {
+public class Main2 {
     public static void main(String[] args) throws ArithmeticException {
 
         System.out.println("--Clase 1--");

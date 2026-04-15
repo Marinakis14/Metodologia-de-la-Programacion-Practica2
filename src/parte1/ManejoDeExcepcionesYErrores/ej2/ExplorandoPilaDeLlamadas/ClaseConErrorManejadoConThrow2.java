@@ -1,4 +1,4 @@
-package parte1.ManejoDeExcepcionesYErrores.ej2_ExplorandoPilaDeLlamadas;
+package parte1.ManejoDeExcepcionesYErrores.ej2.ExplorandoPilaDeLlamadas;
 
 public class ClaseConErrorManejadoConThrow2 {
     public static void main(String[] args) {

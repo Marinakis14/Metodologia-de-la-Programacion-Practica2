@@ -1,6 +1,6 @@
 package parte1.ManejoDeExcepcionesYErrores.ej5.OperacionesManejoDeExcepciones;
 
-public class Main {
+public class Main5 {
     public static void main(String[] args) {
         // Ejemplo con la estructura try-catch-finally en el methodC directamente
         // Ademas en este caso no se produce ningun error

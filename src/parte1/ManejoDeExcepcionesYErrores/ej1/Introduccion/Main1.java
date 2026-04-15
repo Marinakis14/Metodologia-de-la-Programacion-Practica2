@@ -1,9 +1,7 @@
-package parte1.ManejoDeExcepcionesYErrores.ej1_Introduccion;
+package parte1.ManejoDeExcepcionesYErrores.ej1.Introduccion;
 
-import java.io.FileNotFoundException;
-
-public class Main {
-    public static void main(String[] args) throws FileNotFoundException {
+public class Main1 {
+    public static void main(String[] args) {
 
         System.out.println("--Clase 1--");
 

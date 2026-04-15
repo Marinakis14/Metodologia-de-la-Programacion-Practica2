@@ -1,26 +1,26 @@
-package parte1.ManejoDeExcepcionesYErrores.ej2_ExplorandoPilaDeLlamadas;
+package parte1.ManejoDeExcepcionesYErrores.ej2.ExplorandoPilaDeLlamadas;
 
-public class ClaseConErrorManejadoConThrow3 {
+public class ClaseConErrorManejadoConThrow1 {
     public static void main(String[] args) {
         System.out.println("Enter main()");
-        try {
-            methodA();
-            System.out.println("methodC se ha ejecutado correctamente");
-        } catch (ArithmeticException e) {
-            System.out.println("Se ha producido un error en methodC() manejado desde main()");
-        }
+        methodA();
         System.out.println("Exit main()");
     }
 
-    public static void methodA() throws ArithmeticException {
+    public static void methodA() {
         System.out.println("Enter methodA()");
         methodB();
         System.out.println("Exit methodA()");
     }
 
-    public static void methodB() throws ArithmeticException {
+    public static void methodB() {
         System.out.println("Enter methodB()");
-        methodC();
+        try {
+            methodC();
+            System.out.println("methodC se ha ejecutado correctamente");
+        } catch (ArithmeticException e) {
+            System.out.println("Se ha producido un error en methodC() manejado desde methodB()");
+        }
         System.out.println("Exit methodB()");
     }
 

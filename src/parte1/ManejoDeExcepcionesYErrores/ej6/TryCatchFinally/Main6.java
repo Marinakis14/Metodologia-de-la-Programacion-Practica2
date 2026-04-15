@@ -3,8 +3,8 @@ package parte1.ManejoDeExcepcionesYErrores.ej6.TryCatchFinally;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 
-public class Main {
-    static void main(String[] args) {
+public class Main6 {
+    public static void main(String[] args) {
         // Comprobamos las dos salidas distintas de la clase TryCatchFinally
         System.out.println("--Clase 1--");
         System.out.println("--No se producen excepciones--");

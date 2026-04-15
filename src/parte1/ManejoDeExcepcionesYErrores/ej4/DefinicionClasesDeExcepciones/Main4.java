@@ -1,9 +1,7 @@
 package parte1.ManejoDeExcepcionesYErrores.ej4.DefinicionClasesDeExcepciones;
 
-import parte1.ManejoDeExcepcionesYErrores.ej1_Introduccion.EjemploPrograma;
-
-public class Main {
-    static void main(String[] args) {
+public class Main4 {
+    public static void main(String[] args) {
         // por un lado tenemos todas las excepciones no verificadas que no son comprobadas por el compilador,
         // y por lo tanto, no necesitan ser capturadas o declaradas como lanzadas
         System.out.println("--Clase 1--");

@@ -1,4 +1,4 @@
-package parte1.ManejoDeExcepcionesYErrores.ej1_Introduccion;
+package parte1.ManejoDeExcepcionesYErrores.ej1.Introduccion;
 
 import java.io.FileNotFoundException;
 
