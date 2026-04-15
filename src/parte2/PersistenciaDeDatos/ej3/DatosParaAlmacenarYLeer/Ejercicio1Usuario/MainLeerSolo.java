@@ -18,7 +18,7 @@ public class MainLeerSolo {
         }
 
         public static void main(String[] args) {
-            String rutaArchivo = "C:\\Users\\UAH\\IdeaProjects\\Metodologia-de-la-Programacion-Practica2\\src\\parte2\\PersistenciaDeDatos\\ej3\\DatosParaAlmacenarYLeer\\Ejercicio1Usuario\\Usuario.json";
+            String rutaArchivo = "Usuario2.json";
             Usuario usuarioCargado = cargarObjetoDesdeArchivo(rutaArchivo, Usuario.class);
 
             if (usuarioCargado != null) {
