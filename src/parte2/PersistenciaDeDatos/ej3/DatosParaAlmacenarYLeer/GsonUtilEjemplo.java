@@ -28,13 +28,13 @@ public class GsonUtilEjemplo {
         }
     }
     public static void main(String[] args) {
-// Crear una instancia del objeto Usuario
+        // Crear una instancia del objeto Usuario
         Usuario usuario = new Usuario("Juan", 30, "juan@example.com");
-// Ruta del archivo donde se guardará el objeto
+        // Ruta del archivo donde se guardará el objeto
         String rutaArchivo = "usuario.json";
-// Guardar el objeto Usuario en un archivo JSON
+        // Guardar el objeto Usuario en un archivo JSON
         guardarObjetoEnArchivo(rutaArchivo, usuario);
-// Cargar el objeto Usuario desde el archivo JSON
+        // Cargar el objeto Usuario desde el archivo JSON
         Usuario usuarioCargado = cargarObjetoDesdeArchivo(rutaArchivo, Usuario.class);
         if (usuarioCargado != null) {
             System.out.println("Usuario cargado: " + usuarioCargado.nombre);
@@ -50,6 +50,23 @@ public class GsonUtilEjemplo {
             this.edad = edad;
             this.correo = correo;
         }
-// Getters y setters no incluidos por brevedad
+        // Getters y setters no incluidos por brevedad
     }
 }
+
+/**
+ * ¿Porque se usa tanto el modificador 'static' y porque hace cosas extrañas? :
+ *
+ * En este caso usamos static en todos los metodos porque asi podemos hacer referencia a ellos facilmente en el main
+ * si  no pusieramos, el modificador 'static' para utilizar guardarObjetoEnArchivo o cargarObjetoDesdeArchivo
+ * habria que hacer:
+ * GsonUtilEjemplo util = new GsonUtilEjemplo();
+ * util.guardarObjetoEnArchivo(...);
+ * para usar los metodos
+ */
+
+/**
+ * ¿Donde se guarda el fichero de datos?
+ *
+ * El fichero de datos se guarda en la carpeta raiz del proyecto, al mismo nivel que src.
+ */
