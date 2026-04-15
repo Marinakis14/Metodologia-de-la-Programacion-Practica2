@@ -62,3 +62,4 @@ public class MainEj3 {
 
 //Cuando se guarda un array directamente, el JSON resultante es una lista de valores.
 //Si el array está dentro de un objeto, aparece como un atributo del objeto y se reconstruye correctamente al leerlo.
+//Es decir
