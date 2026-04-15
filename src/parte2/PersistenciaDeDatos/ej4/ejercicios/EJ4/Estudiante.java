@@ -1,4 +1,4 @@
-package parte2.PersistenciaDeDatos.ej4.ejercicios.EJ4;
+package parte2.PersistenciaDeDatos.ej4.Ejercicios.EJ4;
 
 public class Estudiante {
     String nombre;
