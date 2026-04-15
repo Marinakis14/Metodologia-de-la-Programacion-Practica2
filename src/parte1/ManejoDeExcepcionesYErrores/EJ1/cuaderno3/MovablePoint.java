@@ -1,4 +1,4 @@
-package parte2.PersistenciaDeDatos.ej4.Ejercicios.EJ1.cuaderno3;
+package parte1.ManejoDeExcepcionesYErrores.EJ1.cuaderno3;
 
 public class MovablePoint extends Point {
 
@@ -11,7 +11,7 @@ public class MovablePoint extends Point {
     /**
      * Constructs a MovablePoint instance with the given x, y , xSpeed and ySpeed
      */
-    MovablePoint(float x, float y, float xSpeed, float ySpeed) {
+    public MovablePoint(float x, float y, float xSpeed, float ySpeed) {
         super(x, y);
         this.xSpeed = xSpeed;
         this.ySpeed = ySpeed;
@@ -29,7 +29,7 @@ public class MovablePoint extends Point {
     /**
      * Constructs a MovablePoint instance with the given x, y , xSpeed and ySpeed
      */
-    MovablePoint() {
+    public MovablePoint() {
         super();
     }
 

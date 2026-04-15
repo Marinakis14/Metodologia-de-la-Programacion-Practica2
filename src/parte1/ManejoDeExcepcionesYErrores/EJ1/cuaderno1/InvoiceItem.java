@@ -1,4 +1,4 @@
-package parte2.PersistenciaDeDatos.ej4.Ejercicios.EJ1.cuaderno1;
+package parte1.ManejoDeExcepcionesYErrores.EJ1.cuaderno1;
 
 public class InvoiceItem {
     //private instance variable
@@ -8,7 +8,7 @@ public class InvoiceItem {
     private double unitPrice;
 
     /** Constructs a InvoiceItem instance with the given id, desc qty and unitPrice */
-    InvoiceItem(String id, String desc, int qty, double unitPrice) {
+    public InvoiceItem(String id, String desc, int qty, double unitPrice) {
         this.id = id;
         this.desc = desc;
         this.qty = qty;

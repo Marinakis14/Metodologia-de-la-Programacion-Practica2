@@ -1,4 +1,4 @@
-package parte2.PersistenciaDeDatos.ej4.Ejercicios.EJ1.cuaderno3;
+package parte1.ManejoDeExcepcionesYErrores.EJ1.cuaderno3;
 
 public class Point {
 
@@ -11,7 +11,7 @@ public class Point {
     /**
      * Constructs a Point instance with the given x and y
      */
-    Point(float x, float y) {
+    public Point(float x, float y) {
         this.x = x;
         this.y = y;
     }
@@ -19,7 +19,7 @@ public class Point {
     /**
      * Constructs a Point instance
      */
-    Point() {
+    public Point() {
     }
 
     //Getter for instance variable x

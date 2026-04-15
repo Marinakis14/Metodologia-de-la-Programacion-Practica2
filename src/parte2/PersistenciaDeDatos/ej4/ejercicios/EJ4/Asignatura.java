@@ -1,8 +1,8 @@
-package parte2.PersistenciaDeDatos.ej4.Ejercicios.EJ4;
+package parte2.PersistenciaDeDatos.ej4.ejercicios.EJ4;
 
 public class Asignatura {
-    String nombreAsignatura;
-    Estudiante[] estudiantes;
+    public String nombreAsignatura;
+    public Estudiante[] estudiantes;
 
     public Asignatura() {
     }
