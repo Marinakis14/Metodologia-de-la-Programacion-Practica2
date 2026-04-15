@@ -1,0 +1,20 @@
+Para esta primera parte, la manera en la que hemos estructurado las clases es muy importante para los tests.
+En primer lugar en cada apartado hemos creado una clase main que englobara a todas las demas y que ejecutara en ella
+todos los metodos y todas las clases de ese apartado con lo cual si quisieramos hacer los tests de cobertura de un
+apartado, bastaría con hacer el test de dicha clase main la cual comprobaria todas las demás.
+Además de esto, hemos creado tambien un MainGeneral para toda la primera parte de la práctica, donde englobamos a todos
+los mains de los 8 apartados distintos, los cuales a su vez engloban a todas las demás clases y por tanto al hacer el
+test de cobertura de dicho MainGeneral, obtenemos la cobertura de toda la parte a).
+
+NOTA: Es importante señalar que el test no consigue el 100% en todos los apartados debido a los siguiente:
+- En primer lugar, hemos añadido alguna clase en la que se produce una excepcion que no se maneja, ya que sirve como
+    ejemplo para las demás clases y como estan relacionadas, sin embargo al no controlar esta excepción, no podemos
+    ejecutar dicha clase sin que de error y por tanto no la hemos añadido a nuestros metodos main y no se comprueba en
+    nuestro test de cobertura.
+
+- También influyen en los porcentajes el hecho de que practicamente todas las clases generan excepciones (ya que es el
+    tema de la practica) pero estos errores aunque los hemos manejado y controlado todos (excepto alguno puntual como
+    hemos mencionado antes), al llegar a la excepcion saltan directamente al bloque del catch y por tanto, el resto de
+    lineas que hay a continuación tampoco se comprueban en el test de cobertura, lo cual baja el porcentaje.
+
+Quitando estos problemas, el test cubre todo el código y nos evita el trabajo de tener que crear un test para cada clase.
